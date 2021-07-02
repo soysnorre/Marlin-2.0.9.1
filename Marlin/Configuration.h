@@ -589,9 +589,9 @@
     //#define DEFAULT_Kd 74.70
     // DyzEnd Trianglelab-Sensor de temperatura de T-D500, 500 ℃
     // https://docs.dyzedesign.com/hotends.html#marlin-firmware
-    #define DEFAULT_Kp 12.32
-    #define DEFAULT_Ki 0.75
-    #define DEFAULT_Kd 50.66
+    #define DEFAULT_Kp 12.67
+    #define DEFAULT_Ki 0.77
+    #define DEFAULT_Kd 52.15
   #endif
 #endif // PIDTEMP
 
@@ -634,9 +634,9 @@
   //#define DEFAULT_bedKd 290.86
 
   //KEENOVO Silicone Heater 220V 750W NTC 100K thermistor (Beta 25/50 3950K-1%) on CR-10S (M303 E-1 S50 C8)
-  #define DEFAULT_bedKp 29.10
-  #define DEFAULT_bedKi 3.83
-  #define DEFAULT_bedKd 147.60
+  #define DEFAULT_bedKp 58.21
+  #define DEFAULT_bedKi 11.63
+  #define DEFAULT_bedKd 194.21
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
