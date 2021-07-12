@@ -589,9 +589,9 @@
     //#define DEFAULT_Kd 74.70
     // DyzEnd Trianglelab-Sensor de temperatura de T-D500, 500 ℃
     // https://docs.dyzedesign.com/hotends.html#marlin-firmware
-    #define DEFAULT_Kp 12.67
-    #define DEFAULT_Ki 0.77
-    #define DEFAULT_Kd 52.15
+    #define DEFAULT_Kp 14.11
+    #define DEFAULT_Ki 1.14
+    #define DEFAULT_Kd 43.72
   #endif
 #endif // PIDTEMP
 
@@ -634,9 +634,9 @@
   //#define DEFAULT_bedKd 290.86
 
   //KEENOVO Silicone Heater 220V 750W NTC 100K thermistor (Beta 25/50 3950K-1%) on CR-10S (M303 E-1 S50 C8)
-  #define DEFAULT_bedKp 58.21
-  #define DEFAULT_bedKi 11.63
-  #define DEFAULT_bedKd 194.21
+  #define DEFAULT_bedKp 39.05
+  #define DEFAULT_bedKi 7.24
+  #define DEFAULT_bedKd 140.32
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -909,7 +909,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.30, 79.80, 398.90, 339.60 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.2, 80.1, 400.3, 339.60 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1573,7 +1573,7 @@
   #if ENABLED(G26_MESH_VALIDATION)
     #define MESH_TEST_NOZZLE_SIZE    0.6  // (mm) Diameter of primary nozzle.
     #define MESH_TEST_LAYER_HEIGHT   0.325  // (mm) Default layer height for G26.
-    #define MESH_TEST_HOTEND_TEMP  205    // (°C) Default nozzle temperature for G26.
+    #define MESH_TEST_HOTEND_TEMP  215    // (°C) Default nozzle temperature for G26.
     #define MESH_TEST_BED_TEMP      60    // (°C) Default bed temperature for G26.
     #define G26_XY_FEEDRATE         20    // (mm/s) Feedrate for G26 XY moves.
     #define G26_XY_FEEDRATE_TRAVEL 100    // (mm/s) Feedrate for G26 XY travel moves.
@@ -1615,7 +1615,7 @@
   //========================= Unified Bed Leveling ============================
   //===========================================================================
 
-  //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
+  #define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
   #define MESH_INSET 1              // Set Mesh bounds as an inset region of the bed
   #define GRID_MAX_POINTS_X 4       // Don't use more than 15 points per axis, implementation limited.
